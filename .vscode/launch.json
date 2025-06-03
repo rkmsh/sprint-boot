@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-JasperReportsApplication<jasper-reports>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.spring.jasper_reports.JasperReportsApplication",
+            "projectName": "jasper-reports",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
