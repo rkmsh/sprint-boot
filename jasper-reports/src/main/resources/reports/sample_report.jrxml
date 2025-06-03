@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
-                        http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-    name="sample_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20"
-    topMargin="20" bottomMargin="20" uuid="12345678-1234-1234-1234-1234567890ab">
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports
+                                  http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="sample_report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20"
+              rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a9c51a6-2b2f-4b91-bda5-c3dcf6c1a2f9">
 
     <field name="name" class="java.lang.String"/>
     <field name="email" class="java.lang.String"/>
     <field name="age" class="java.lang.Integer"/>
 
+    <columnHeader>
+        <band height="25">
+            <staticText>
+                <reportElement x="0" y="0" width="150" height="25" uuid="c1c27d3d-07ff-4df1-93ea-76a6f57e2bc4"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="160" y="0" width="200" height="25" uuid="3123e41f-2895-4452-8727-d64905a18533"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Email]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="370" y="0" width="50" height="25" uuid="b63bc41e-56c1-49f0-bb9e-2927c01cc0c6"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Age]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+
     <detail>
         <band height="20">
             <textField>
-                <reportElement x="0" y="0" width="150" height="20"/>
+                <reportElement x="0" y="0" width="150" height="20" uuid="c9e631f1-5d3c-43e6-a91d-b59d7c95c5ed"/>
                 <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="160" y="0" width="200" height="20"/>
+                <reportElement x="160" y="0" width="200" height="20" uuid="87115e9f-f67d-4e0e-a0a2-77492f87d0b4"/>
                 <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="370" y="0" width="50" height="20"/>
+                <reportElement x="370" y="0" width="50" height="20" uuid="346eeac1-7306-42d5-b13f-875f169e4f53"/>
                 <textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
             </textField>
         </band>
