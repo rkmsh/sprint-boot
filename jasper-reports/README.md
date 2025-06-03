@@ -34,6 +34,7 @@ This repository demonstrates how to integrate **Jasper Reports** with a **Spring
 
 ## Using Docker
 
+1. **Commands**:
     ```bash
     # Build Docker image
     docker build -t my-spring-boot-app .
@@ -41,6 +42,7 @@ This repository demonstrates how to integrate **Jasper Reports** with a **Spring
     # Run the container
     docker run -p 8080:8080 my-spring-boot-app
     ```
+    
 
 ## Usage
 
