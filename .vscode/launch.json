@@ -9,6 +9,16 @@
             "projectName": "jasper-reports",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApacheKafkaApplication<apache-kafka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.spring.apache_kafka.ApacheKafkaApplication",
+            "projectName": "apache-kafka",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
